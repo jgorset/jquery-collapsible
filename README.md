@@ -13,6 +13,7 @@ expand items.
     
         <head>
     
+            <script src="path/to/jquery.js"></script>
             <script src="path/to/jquery.collapsible.js"></script>
 
             <script>
