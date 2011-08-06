@@ -11,9 +11,9 @@
 
     $.fn.collapsible = function(options){
 
-        options                     = options || {}
-        options.collapsed           = options.collapsed || false
-        options.collapsed_label     = options.collapsed_label || 'Expand'
+        options                     = options || {}
+        options.collapsed           = options.collapsed || false
+        options.collapsed_label     = options.collapsed_label || 'Expand'
         options.expanded_label      = options.expanded_label || 'Collapse'
         options.collapsed_class     = options.collapsed_class || 'collapsed'
         options.expanded_class      = options.expanded_class || 'expanded'
