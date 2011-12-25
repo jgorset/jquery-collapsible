@@ -11,7 +11,7 @@
 
     $.fn.collapsible = function(options){
 
-        var options = $.extend({
+        options = $.extend({
             collapsed: false,
             labels: {
                 collapsed: 'Expand',
