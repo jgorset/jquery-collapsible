@@ -1,8 +1,8 @@
-# jQuery Collapsible Plugin
+# jQuery Collapsible
 
 ## About
 
-Collapsible is a jQuery plugin that makes it ridiculously easy to collaps and expand elements.
+Collapsible makes it ridiculously easy to collapse and expand elements.
 
 ## Usage
 
