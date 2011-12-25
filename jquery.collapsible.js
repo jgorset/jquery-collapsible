@@ -10,7 +10,7 @@
 (function($){
 
     $.fn.collapsible = function(options){
-        
+
         var options = $.extend({
             collapsed: false,
             labels: {
