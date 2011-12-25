@@ -10,24 +10,29 @@
 (function($){
 
     $.fn.collapsible = function(options){
-
-        options                     = options || {}
-        options.collapsed           = options.collapsed || false
-        options.collapsed_label     = options.collapsed_label || 'Expand'
-        options.expanded_label      = options.expanded_label || 'Collapse'
-        options.collapsed_class     = options.collapsed_class || 'collapsed'
-        options.expanded_class      = options.expanded_class || 'expanded'
+        
+        var options = $.extend({
+            collapsed: false,
+            labels: {
+                collapsed: 'Expand',
+                expanded: 'Collapse'
+            },
+            classes: {
+                collapsed: 'collapsed',
+                expanded: 'expanded'
+            }
+        }, options)
 
         $(this).each(function(){
             var parent = this
 
             $(this).append(
                 $('<a />', {
-                    'html': options.expanded_label,
-                    'class': options.expanded_class,
+                    'html': options.labels.expanded,
+                    'class': options.classes.expanded,
                     'click': function(){
 
-                        if($(this).hasClass(options.expanded_class)){
+                        if($(this).hasClass(options.classes.expanded)){
                             collapse()
                         }else{
                             expand()
@@ -42,21 +47,21 @@
             }
 
             function collapse(){
-                var button = $(parent).find('.' + options.expanded_class)
+                var button = $(parent).find('.' + options.classes.expanded)
 
                 $(parent).children().not(button).slideUp(100)
-                $(button).removeClass(options.expanded_class)
-                $(button).addClass(options.collapsed_class)
-                $(button).text(options.collapsed_label)
+                $(button).removeClass(options.classes.expanded)
+                $(button).addClass(options.classes.collapsed)
+                $(button).text(options.labels.collapsed)
             }
 
             function expand(){
-                var button = $(parent).find('.' + options.collapsed_class)
+                var button = $(parent).find('.' + options.classes.collapsed)
 
                 $(parent).children().not(button).slideDown(100)
-                $(button).removeClass(options.collapsed_class)
-                $(button).addClass(options.expanded_class)
-                $(button).text(options.expanded_label)
+                $(button).removeClass(options.classes.collapsed)
+                $(button).addClass(options.classes.expanded)
+                $(button).text(options.labels.expanded)
             }
 
         })
