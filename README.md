@@ -37,7 +37,7 @@ Collapsible is a jQuery plugin that facilitates for collapsing and expanding ite
                     <p>...</p>
                 </div>
                 
-                <div class="item"
+                <div class="item">
                     <h1>...</h1>
                     <p>...</p>
                 </div>
