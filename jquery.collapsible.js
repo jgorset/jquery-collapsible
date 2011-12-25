@@ -2,7 +2,7 @@
  * jQuery Collapsible Plugin
  * Examples and documentation at: http://github.com/jgorset/jquery-collapsible
  * Copyright (c) 2011 Johannes Gorset
- * Version: 1.0 
+ * Version: 1.1 
  * License: MIT
  * Requires: jQuery v1.4 or later
  */
